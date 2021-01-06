@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Suscripción{% endblock %}
+
+{% block headLinks %}
+
+<link rel="stylesheet" href="public/css/forms.css">
+<script type="text/javascript" src="public/js/suscripcion.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="public/css/responsive.css">
+
+
+
+{% endblock %}
+
+
+{% block main %}
+
+<main>
+    <div class="imagenFondoSuscripc">
+        <img src="public\img\1717.jpg" alt="">
+    </div>
+    <div id="formulariosuscrip">
+        <form id="suscripcion" name="suscripcion">
+            <h3>Suscripción</h3>
+            <div class="inputs_50">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                <span id="nombre_val"></span>
+            </div>
+            <div class="inputs_50">
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+                <span id="apellido_val"></span>
+
+            </div>
+            <div class="clearflix"></div>
+            <div class="inputs_100">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <span id="email_val"></span>
+            </div>
+
+            <!-- ESTOS CAMPOS DEL CAMPO SUSCRIPCION NO BORRAR!! VALIDAN OK CON JQUERY -->
+            <!-- <div class="inputs_33">
+                <label for="tlf">Teléfono <span>*</span></label>
+                <input type="text" id="tlf" name="tlf">
+                <span id="tlf_val"></span>
+
+            </div>
+            <div class="inputs_33">
+                <label for="dni">DNI <span>*</span></label>
+                <input type="text" id="dni" name="dni">
+                <span id="dni_val"></span>
+            </div>
+            <div class="inputs_33">
+                <label for="any">Año de Nacimiento <span>*</span></label>
+                <input type="text" id="any" name="any">
+                <span id="any_val"></span>
+            </div>
+            <div class="clearflix"></div>
+            <div class="inputs_100">
+                <label>Provincias Catalanas <span>*</span></label>
+                <select class="provincias" name="provincias">
+                    <option value="0">[Selecciona]</option>
+                    <option value="1">Barcelona</option>
+                    <option value="2">Girona</option>
+                    <option value="3">Lleida</option>
+                    <option value="4">Tarragona</option>
+                </select>
+                <span id="provincias_val"></span>
+
+            </div>
+            <div class="inputs_100">
+                <label for="mensaje">Mensaje <span>*</span></label>
+                <textarea  placeholder="" id="mensaje" name="mensaje"></textarea>
+                <span id="mensaje_val"></span>
+            </div> -->
+            <button type="button" class="btn" id="btn_contacto">Enviar datos</button>
+
+            <div id="dataSuscrip" name="dataSuscrip"></div>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+{% endblock %}

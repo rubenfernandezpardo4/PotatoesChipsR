@@ -1,0 +1,373 @@
+/* AQUI APLICAMOS LOS ESTILOS DE INDEX */
+body{
+    overflow-x: hidden;    /* propiedad para quitar el SCROLL horizontal */
+}
+/* LOGOTIPO 'Potatoes Chips R' */
+.logotipo h1{
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    right: 40%;
+    color: white;
+    margin-top: 20%;
+    margin-left: 30%;
+    font-family: 'Parisienne';
+}
+.logotipo h4{
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    color: white;
+    margin-top: 20%;
+    margin-left: 20%;
+    font-family: 'Parisienne';
+    margin-right: 5px;
+}
+/* .imagenfondo9 img{
+    margin-bottom: -5px;
+} */
+.imagenfondo_9 img{
+    filter: sepia(70%);
+}
+.imagenfondo_9 img:hover{
+    filter: none;
+    transition: .3s;
+}
+header{
+    font-size: 20px;
+    color: grey;
+    padding: 50px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+    position: absolute; /*DEJA EL NAVBAR ARRIBA POSICIONADO*/
+    bottom: 0;
+    z-index: 100000;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a{
+    color: grey;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+ul li a:hover{
+    color: #cfbf13;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/*
+.imagenfondo{
+    background-attachment: fixed;
+    background-size: auto;
+    background-image: url("../img/images92.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+} */
+
+.imagenfondo_2 img{
+    width: 100%;
+    height: 82vh;
+    /* height: 100%; */
+    overflow: hidden;
+    /* position: relative; */
+}
+.contenedorvideo video{
+    /* PARA DEJARLA SIN MARGENES ARRIBA Y ABAJO  */
+    /* margin: 0 50%;
+    transform: translate(-50%); */
+    margin: 0px 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0px 0px 41px 60px rgba(0,0,0,1); */
+    margin-top: 35px;
+}
+.contenedorvideo img{
+    z-index: -1;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+}
+
+/* CLASE QUE SE AÑADIRÁ CON JS PARA EL MENU PEGAJOSO______________________________________________________________ */
+.menu-fixed {
+	position: fixed;
+    background-color: white;
+    /* LA PROPIEDAD Z-INDEX HACE QUE EL MENU QUEDE UNA CAPA POR DELANTE DE TODAS LAS COSAS DE LA WEB(Y DE ESTA MANERA NO QUEDE DETRAS Y NO PODAMOS INTERACCIONAR-USAR EL NAVBAR, Y PODAMOS USARLO) */
+	z-index: 1000;
+	top:0;
+    left: 0;
+	width: 100% ;
+    padding: 30px;
+    /* el box shadow es para darle sombra al menu navbar */
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+.menu-fixed:hover {
+    opacity: 1;
+}
+
+.menu-fixed-responsive{
+	position: fixed;
+    background-color: white;
+    /* LA PROPIEDAD Z-INDEX HACE QUE EL MENU QUEDE UNA CAPA POR DELANTE DE TODAS LAS COSAS DE LA WEB(Y DE ESTA MANERA NO QUEDE DETRAS Y NO PODAMOS INTERACCIONAR-USAR EL NAVBAR, Y PODAMOS USARLO) */
+	z-index: 1000;
+	top:0;
+    left: 0;
+	width: 100% ;
+    padding: 30px;
+    /* el box shadow es para darle sombra al menu navbar */
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+.menu-fixed-responsive:hover {
+    opacity: 1;
+}
+
+
+.navbar a:hover{
+    background-color: black;
+    color: #cfbf13;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* ESTILOS DE COMO FABRICAMOS__________________________________________________________________ */
+.comofabricamos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #f7f5f2;
+}
+
+.comofabricamos img{
+    width:388px;
+    height:483px;
+    margin: 0 20px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #3a3a3a;
+    font-family: 'Signika',serif;
+    margin: 10px 0;
+
+}
+
+.comofabricamos p{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #808285;
+    margin-bottom: 30px;
+}
+
+.comofabricamosizq{
+    text-align: right;
+    width: 20%;
+    margin-left: 15%;
+}
+
+.comofabricamosdcha{
+    text-align: left;
+    width: 20%;
+    margin-right: 15%;
+
+}
+
+/* ESTILOS DE(HISTORIA) SABIAS QUE.._______________________________________________________________ */
+#imghistoria{
+    opacity: 0.95;
+    position: absolute;
+}
+section div h1{
+    text-align: center;
+    position: relative;
+    color: #d43125;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    line-height: 1;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+ section div p{
+    position: relative;
+    margin: 0 auto 20px;
+    text-align: center;
+    max-width: 50%;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 25px;
+ }
+ /* ESTOS SON LOS ESTILOS DE NUESTROS PRODUCTOS___________________________________________________________ */
+
+main section #nuestrosproductos h1{
+    color: #cfbf13;
+    font-size: 35px;
+    text-align: center;
+    font-family: monospace;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: 150px;
+}
+.contenedor_productos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.producto{
+    width: 33.3%;
+    text-align: center;
+}
+.imagentitulo{
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 0 35%;
+    transform: translateX(-35%);
+    transform: scale(1.1, 1.1);
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+.imagentitulo:hover{
+    /* width: 150px;
+    height: 50px;
+    display: block;
+    margin: 0 35%;
+    transform: translateX(-35%);
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+    margin-bottom: -20px;
+    cursor:auto !important;
+    margin-top: 10px; */
+}
+/* ESTILOS DEL BOTON DE NUESTROS PRODUCTOS (LAS P) */
+/* #nuestrosproductos p{
+    font-size: 90%;
+    font-family: sans-serif;
+    color: black;
+    border-color: black;
+    text-align: center;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    max-width: 65%;
+    margin-top: 25px;
+}
+#nuestrosproductos p:hover{
+    font-size: 90%;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    right: 10px;
+    background-color: black;
+    padding: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    max-width: 65%;
+    cursor: pointer;
+} */
+/* ESTILOS DEL BOTON DE NUESTROS PRODUCTOS (DE LAS A HREF), LAS P LAS HE DEJADO COMENTADAS.. por problemas con hover(mas arriba)*/
+#nuestrosproductos p a{
+    display: inline-block;
+    font-size: 90%;
+    font-family: sans-serif;
+    color: black;
+    border-color: black;
+    text-align: center;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    max-width: 65%;
+    margin-top: 25px;
+    text-decoration: none;
+    /* Con esta propiedad el texto no se sale del border(al hacerlo responsive ) */
+    word-wrap: break-word;
+}
+#nuestrosproductos p a:hover{
+    font-size: 90%;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    right: 10px;
+    background-color: black;
+    padding: 10px;
+    padding-right: 10px;
+    border: 2px solid  black;
+    max-width: 65%;
+    cursor: pointer;
+    transition: .5s;
+}
+div .contenedor_productos div img:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+}
+
+/* ESTILOS MODAL___________________________________________________________________________________________________ */
+.modal{
+    margin-top: 100px !important;
+    /* background-color: rgb(245, 255, 61) !important; */
+    /* background-color: #fec503 !important; */
+}
+.imgmodal{
+    /* border-top-left-radius: 80px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 80px; */
+}
+.modal img{
+    padding-top: 50px;
+    margin: 0 50%;
+    transform: translate(-50%);
+}
+.modal h3{
+    color: #fec503;
+    font-size: 35px;
+    text-align: center;
+    font-family: monospace;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.modal table{
+    margin: auto;
+    margin-bottom: 100px;
+}
+.modal table tbody tr td{
+    padding: 5px;
+    box-shadow: 0px 2px 0px 0px black;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 15px;
+}
+.modal table tbody tr td span{
+    color:red;
+    font-weight: bold;
+    font-size: 20px;
+}

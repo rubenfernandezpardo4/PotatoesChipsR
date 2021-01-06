@@ -1,0 +1,76 @@
+{
+     "": {
+        "controller": "StaticController",
+        "action": "renderIndex"
+      },
+     "index": {
+         "controller": "StaticController",
+         "action": "renderIndex"
+      },
+      "index#": {
+          "controller": "StaticController",
+          "action": "renderIndex"
+       },
+      "slider": {
+         "controller": "StaticController",
+         "action": "renderSlider"
+      },
+      "curiosidades": {
+          "controller": "StaticController",
+          "action": "renderCuriosidades"
+      },
+      "dondeestamos": {
+          "controller": "StaticController",
+          "action": "renderDondeestamos"
+      },
+
+
+
+
+     "suscripcion": {
+          "controller": "UserController",
+          "action": "renderSuscripcion"
+      },
+      "admin": {
+          "controller": "UserController",
+          "action": "renderLoginAdmin"
+      },
+      "adminLogin": {
+          "controller": "UserController",
+          "action": "adminLogin"
+      },
+      "formulariosuscripcion": {
+          "controller": "UserController",
+          "action": "Suscripcion"
+      },
+      "close": {
+          "controller": "UserController",
+          "action": "close"
+      },
+
+
+
+
+      "crud": {
+          "controller": "CrudController",
+          "action": "renderCrud"
+      },
+      "addImage": {
+          "controller": "CrudController",
+          "action": "addImage"
+      },
+      "deleteImage": {
+          "controller": "CrudController",
+          "action": "deleteImage"
+      },
+      "editImage": {
+          "controller": "CrudController",
+          "action": "editImage"
+      },
+      "SuscripcionAnuncio": {
+          "controller": "CrudController",
+          "action": "SuscripcionAnuncio"
+      }
+
+
+}

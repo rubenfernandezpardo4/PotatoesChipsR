@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ /* SLIDER 1: SIN BOTONES(CARRUSSELL QUE AVANZA IMAGENES AUTOMATICAMENTE)  */
+.mask{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -8px;
+}
+.mask>.container_slider{
+    width: 500%;
+    height: 100%;
+    animation-name: slider;
+    animation-duration: 30s;
+    position: relative;
+    animation-iteration-count: infinite; /*propiedad que nos reproduce infinitamente animacion*/
+}
+.mask>.container_slider>.slide{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 3px 1px 48px 67px rgba(255,255,255,1); */
+}
+.mask>.container_slider>#slide1{
+    background-image: url(../img/slider/1.jpg);
+}
+.mask>.container_slider>#slide2{
+    background-image: url(../img/slider/2.jpg);
+}
+.mask>.container_slider>#slide3{
+    background-image: url(../img/slider/3.jpg);
+}
+.mask>.container_slider>#slide4{
+    background-image: url(../img/slider/4.jpg);
+}
+.mask>.container_slider>#slide5{
+    background-image: url(../img/slider/5.jpg);
+}
+
+.mask>.container_slider>#slide1,
+.mask>.container_slider>#slide2,
+.mask>.container_slider>#slide3,
+.mask>.container_slider>#slide4,
+.mask>.container_slider>#slide5{
+    background-attachment: fixed;
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    18%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    38%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    58%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    78%{
+        left: -300%;
+    }
+    80%{
+        left: -400%;
+    }
+    80%{
+        left: -400%;
+    }
+}
+
+
+/* SLIDER 2: CON BOTONES(EL USUARIO PUEDE INTERACCIONAR) */
+/*deja el footer abajo*/
+/* html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.mask{
+    flex: 1 0 auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+header{
+    font-size: 20px;
+    color: grey;
+    padding: 30px;
+    width: 100%;
+    background: #fff;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+nav ul li a:hover{
+	color: #cfbf13;
+	font-weight: bold;
+}
+
+div#mask{
+	width: 100%;
+
+	overflow: hidden;
+	position: relative;
+}
+
+div#mask>.arrow{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	cursor: pointer;
+	right: 15px;
+	display: inline-block;
+	transition: all .3s;
+
+}
+
+div#mask>.arrow:hover{
+	background-color: rgba(255,255,255,.6);
+}
+
+div#mask>.arrow>img{
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+div#mask>.arrow.left{
+	right: unset;
+	left: 15px;
+}
+
+div.bullets{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+}
+
+div.bullets>.bullet{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	margin: 0 5px;
+	cursor: pointer;
+	border: solid 1px white;
+}
+
+
+div.bullets>.bullet:hover{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: black;
+	margin: 0 5px;
+	cursor: pointer;
+	border: solid 1px white;
+}
+
+div.bullets>.bullet.selected{
+	border: solid 1px white;
+	background-color: black;
+}
+
+div.bullets>.bullet.selected:hover{
+	border: solid 1px white;
+	background-color: black;
+}
+
+div#mask>div#tira{
+
+	width: 500%;
+	position: relative;
+	transition: all .9s;
+	left: 0px;
+
+}
+
+div#mask>div#tira>div.image{
+	height: 450px;
+	width: 20%;
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+div#mask>div#tira>div#image1{
+	background-image: url(../img/images1.jpg);
+}
+div#mask>div#tira>div#image2{
+	background-image: url(../img/images2.jpg);
+}
+div#mask>div#tira>div#image3{
+	background-image: url(../img/images3.jpg);
+}
+div#mask>div#tira>div#image4{
+	background-image: url(../img/images4.jpg);
+}
+div#mask>div#tira>div#image5{
+	background-image: url(../img/mrpotato2.jpg);
+}
+
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	18%{
+		left: 0;
+	}
+	20%{
+		left: -100%;
+	}
+	38%{
+		left: -100%;
+	}
+	40%{
+		left: -200%;
+	}
+	58%{
+		left: -200%;
+	}
+	60%{
+		left: -300%;
+	}
+	78%{
+		left: -300%;
+	}
+	80%{
+		left: -400%;
+	}
+	100%{
+		left: -400%;
+	}
+} */

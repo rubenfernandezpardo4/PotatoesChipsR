@@ -1,0 +1,27 @@
+{
+    "name": "proyecto/mvc",
+    "description": "PROGRAMACIÓN WEB EN EL ENTORNO SERVIDOR",
+    "license": "public",
+    "authors": [
+        {
+            "name": "CIFO Violeta 2020",
+            "email": "email@email.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=7.0",
+        "components/jquery": ">=3.3.1",
+        "twig/twig": ">=2.0",
+        "phpmailer/phpmailer": ">=6.1 ",
+        "verot/class.upload.php": "*"
+
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "App\\": "App/"
+        }
+    }
+}

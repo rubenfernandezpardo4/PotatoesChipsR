@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}¿Dónde estamos?{% endblock %}
+
+{% block headLinks %}
+<link rel="stylesheet" href="public/css/dondeestamos.css">
+<link rel="stylesheet" href="public/css/responsive.css">
+{% endblock %}
+
+{% block main %}
+
+<main id="main_dondeestamos">
+    <div class="dondeestamos">
+        <h1>¿DONDE ESTAMOS?</h1>
+        <h3>Potatoes Chips R</h3>
+        <p>C/ Tuset, s/n</p>
+        <p>Poligono San just</p>
+        <p>08001 Barcelona</p>
+        <p>Tel.:(+34) 93 772 82 54</p>
+        <p>Fax: (+34) 91 846 36 14</p>
+    </div>
+    <div class="contenedor_googlemaps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.006085593165!2d2.1501671149274726!3d41.39567420344509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a29bd6a6de4f%3A0x5e1a22a9445e4c14!2sCarrer%20de%20Tuset%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1580207112271!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" id="googlemaps"></iframe>
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+
+
+main .dondeestamos{
+    margin: 30px 400px;
+    text-align: center;
+    /* esta propiedad nos da espaciado entre los "p"(parrafos)  */
+    line-height: 50px;
+}
+
+main div h1{
+
+    background-image: linear-gradient(to right, #c9d300, #bec716, #b3bb21, #a8af29, #9da32e, #8d9730, #7e8a32, #707e33, #5c6d32, #4a5c30, #3b4c2d, #2e3b28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: 1;
+    font-size: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+main div h3{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #cfbf13;
+    font-weight: lighter;
+    font-weight: bold;
+
+}
+.contenedor_googlemaps #googlemaps{
+    padding-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 100px;
+}
+
+main div p{
+    font-family: sans-serif;
+    font-size: 20px;
+}

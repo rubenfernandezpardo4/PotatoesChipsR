@@ -1,0 +1,132 @@
+
+
+{% extends "base.html" %}
+
+{% block title %}CRUD{% endblock %}
+
+{% block headLinks %}
+
+<link rel="stylesheet" href="public/css/main.css">
+<link rel="stylesheet" href="public/css/crud.css">
+<!-- link de tipo de fuente -->
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<!-- ENLACE JQUERY -->
+<script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+<!--ENLACE DE LA LIBRERIA para la carga de imagenes-> /////////////bs-custom-file-input.js //////////////-->
+<script type="text/javascript" src="public/vendor/bs-custom-file-input.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script> -->
+
+<!--2 ENLACES LIBRERIA //////////// JQUERY VALIDATE(VALIDATE Y METHODS) //////////// -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<!-- link jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+
+<script type="text/javascript" src="public/js/crud.js"></script>
+
+
+
+{% endblock %}
+
+
+{% block main %}
+<main>
+    <h3>ADMIN</h3>
+    <!-- Link para abrir el modal -->
+    <h1>Productos</h1>
+    <p><a href="#addImageModal" rel="modal:open" id="añadirimagen"><span><img src="public/img/añade.png" alt=""></span>Añade aquí</a></p>
+    <!-- <span id="addImageBtn"> + Añadir imagen</span> -->
+
+
+    <!-- MODAL AÑADIR IMAGEN jquery (ventana emergente) -->
+    <div id="addImageModal" class="modal">
+        <form id="addImageForm">
+            <h3>Añadir productos</h3>
+            <input type="text" name="titleAddImage" placeholder="Título">
+            <input type="number" name="categoryAddImage" placeholder="Categoría">
+            <textarea name="descAddImage" rows="8" cols="80" placeholder="Descripción(opcional)"></textarea>
+            <input type="file" class="hidden" name="addImage" id="inputGroupFile0">
+            <img src="" id="preview0">
+            <input type="submit" name="addSubmitForm" value="Subir imagen">
+            <div class="response"></div>
+        </form>
+    </div>
+
+        <!-- MODAL EDITAR IMAGEN -->
+    <div id="editImageModal" class="modal">
+        <form id="editImageForm">
+            <h3>Editar productos</h3>
+            <!-- Estos 3 campos tienen la propiedad HIDDEN(estan escondidos) -->
+            <input type="text" name="idImage" value="" hidden>
+            <input type="text" name="titleEditImageOld" value="" hidden>
+            <input type="number" name="categoryEditImageOld" value="" hidden>
+            <input type="text" name="descEditImageOld" value="" hidden>
+            <input type="text" name="EditImageOld" value="" hidden>
+
+            <input type="text" name="titleEditImage" placeholder="Títulos" value="">
+            <input type="number" name="categoryEditImage" placeholder="Categoría">
+            <textarea name="descEditImage" placeholder="Descripción(opcional)" value=""></textarea>
+            <input type="file" name="EditImage" id="inputGroupFile1">
+            <!-- CREAMOS ESTE INPUT TYPE HIDDEN (donde añadiremos los datos del usuario)-->
+            <!-- <input type="hidden" name="hiddenImage" value=""> -->
+            <img src="" name="preview1" id="preview1">
+            <input type="submit" name="editSubmitForm" value="Actualizar">
+            <div class="response"></div>
+        </form>
+    </div>
+
+
+
+    <div class="imagenes">
+        <!-- Creamos un FOR para pintar mediante TWIG cada imagen de dataImgUser(array), con {{image.image}} le decimos que de la tabla 'images', nos pinte devuelva 'image' -->
+        <div class="response"></div>
+        {% for productos in dataImgUser %}
+            <!-- IMAGEN CRUD -->
+            <img src="{{productos.image}}" alt="">
+            <!-- TITULO IMAGEN -->
+            <label for="">"{{productos.title}}"</label>
+            <!-- ELIMINAR (ENLACE) -->
+            <span class="delImageLink" id="{{productos.idproductos}}" title="{{productos.title}}">Eliminar</span>
+            <!-- EDITAR (ENLACE) que abrirá modal de EDITAR IMAGEN -->
+            <span><a href="#editImageModal" rel="modal:open" class="editImageLink" id="{{productos.idproductos}}" title="{{productos.title}}" descr="{{productos.descr}}" image="{{productos.image}}" categ="{{productos.categorias_idcategorias}}">Editar</a></span>
+
+        {% endfor %}
+    </div>
+
+    <form id="email_suscrip">
+        <h1>Plantilla Email</h1>
+
+        <h2><span><img src="public/img/enviar.png" alt=""></span>Envía una plantilla ya creada de un email de publicidad a tus suscriptores</h2>
+
+        <input type="button" name="" value="Enviar" id="btn_anuncio">
+        <div class="response"></div>
+    </form>
+
+    <form id="email_suscrip_edit">
+        <h1>Crea tu email</h1>
+
+        <h2><span><img src="public/img/creardoc.png" alt=""></span>Crea tu email de publicidad para los suscriptores</h2>
+        <!-- <a href="#createEmail" rel="modal:open">CREAR</a> -->
+        <p><a href="#createEmail" rel="modal:open">Crear</a></p>
+        <!-- <input type="button" value="Crear" id="btn_anuncioCreate"> -->
+        <!-- <input type="button" name="" value="Editar" id="btn_anuncioEdit"> -->
+        <input type="button" name="" value="Enviar" id="btn_anuncioSend">
+        <div class="response"></div>
+    </form>
+
+    <div id="createEmail" class="modal">
+        <form id="createEmail">
+            <h3>Email</h3>
+            <input type="text" name="titleAddImage" placeholder="">
+            <textarea name="descAddImage" rows="8" cols="80" placeholder="Descripción(opcional)"></textarea>
+            <input type="file" class="hidden" name="addImage" id="inputGroupFile0">
+            <img src="" id="preview0">
+            <input type="submit" name="addSubmitForm" value="Subir imagen">
+            <div class="response"></div>
+        </form>
+    </div>
+
+
+</main>
+{% endblock %}

@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+
+	# obligatorio para que funciones las directivas de htaccess
+	RewriteEngine on
+	# convierte la url en p.e.: index.php?p=home => /home
+	RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
+
+</IfModule>

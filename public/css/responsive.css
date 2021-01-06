@@ -1,0 +1,444 @@
+
+.menu_hamburguesa{
+    display: none;
+}
+
+/* RESPONSIVE */
+    /* TABLETS  768px_______________________________________________________________________________________________________________________*/
+@media (max-width:768px){
+    main{
+        overflow-x: hidden;
+    }
+    .imagenfondo_9 img{
+        height: 440px;
+        margin-bottom: -5px;
+    }
+    .contenedorvideo img{
+        display: none;
+
+    }
+
+    .logotipo h4{
+        margin-top: 200px;
+    }
+    .logotipo h1{
+        margin-top: 260px;
+        margin-left: 15px;
+   }
+/* INDEX */
+    /* MENU  RESPONSIVE(HAMBURGUESA)_______________________________________________________________________________________________*/
+    header{
+        padding: 30px;
+        position: inherit;
+    }
+    .menu_hamburguesa{
+        display: block;
+        width: 100%;
+    }
+    .menu_hamburguesa a{
+        color: grey;
+        text-decoration: none;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        text-decoration: none;
+        vertical-align: middle;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    header nav{
+        width: 80%;
+        top: 89px;
+        display: none;
+        margin: 0;
+        position: absolute;
+        box-shadow: 15px 27px 14px -1px rgba(0,0,0,0.39);
+        z-index: 100;
+    }
+    header nav ul {
+        display: block;
+        border-bottom: 1px solid grey;
+        margin-top: 10px;
+    }
+    header nav ul li{
+        padding: 20px;
+        margin-left: -30px;
+        background-color: white;
+        border-bottom: 1px solid grey;
+    }
+    header nav ul li a{
+        padding-left: 41px;
+    }
+    .menu_menu{
+        display: block;
+    }
+    .btn_hamburguesa img{
+        float: right;
+    }
+    /* _____________________________________________________________________________________________________________________*/
+    .imagenfondo_2 img {
+        margin-bottom: -5px;
+    }
+    .contenedorvideo video{
+        margin-top: 0px;
+    }
+    h3{
+        font-weight: 600;
+        color: #3a3a3a;
+        font-family: 'Signika',serif;
+    }
+    main section #nuestrosproductos h1 {
+
+        margin-top: 220px;
+    }
+    .comofabricamos {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+    }
+    .comofabricamos p {
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 16px;
+        color: #808285;
+    }
+    .comofabricamos img {
+        width: 323px;
+        height: 365px;
+        margin: 93px 0px;
+    }
+
+    #historia p {
+        font-size: 17px;
+    }
+    section div p {
+        position: relative;
+        margin: 0 auto 40px;
+        max-width: 85%;
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+    .imagentitulo{
+        margin: 0 auto;
+    }
+    .producto {
+        width: 100%;
+    }
+    section div h1{
+        font-size: 3rem;
+    }
+    footer span {
+        font-size: 12px;
+        margin: 8px;
+        width: 100%;
+    }
+    footer span:hover {
+        font-size: 12px;
+        margin: 8px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+    }
+
+/* CURIOSIDADES */
+    .titulocurios img{
+        width: 250px;
+        height: 150px;
+    }
+    .container_curiosidades h2{
+        font-size: 20px;
+    }
+    .curiosidadesizq img,
+    .curiosidadesdcha img{
+        width: 200px;
+        height: 200px;
+    }
+    .curiosidadesizq img:hover,
+    .curiosidadesdcha img:hover{
+        width: 200px;
+        height: 200px;
+    }
+    .container_curiosidades {
+        margin-left: 20px;
+        /* margin-right: 20px; */
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    .container_curiosidades p{
+        font-size: 15px;
+        opacity: 1;
+    }
+
+
+    /* SUSCRIPCION */
+    #formulariosuscrip form h3 {
+        font-size: 25px;
+        font-family: 'Gloria Hallelujah', cursive;
+        text-align: center;
+    }
+    #formulariosuscrip .inputs_50 {
+        width: 100%;
+        padding: 23px 35px;
+        float: none !important;
+    }
+    #formulariosuscrip .inputs_100 {
+        width: 100%;
+        padding: 23px 35px;
+    }
+    #formulariosuscrip #btn_contacto {
+        width: 39.5%;
+        border: 1px solid #cfbf13;
+        color: white;
+        font-weight: bold;
+        outline: 0;
+        padding: 10px;
+        margin: 33px;
+        background-color: #cfbf13;
+    }
+    #formulariosuscrip form  {
+        width: 400px;
+        margin: 40px auto;
+    }
+/* DONDE ESTAMOS */
+    main .dondeestamos{
+        margin: 30px auto;
+    }
+    .contenedor_googlemaps #googlemaps{
+        margin: 0 50%;
+    }
+
+    /* LOGINADMIN */
+    #login h3 {
+        font-size: 25px;
+        font-family: 'Gloria Hallelujah', cursive;
+        text-align: center;
+    }
+    #formulariologinreg {
+        width: 315px;
+        margin: 40px auto;
+    }
+    #formulariologinreg form h3 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* RESPONSIVE MOVIL  375px__________________________________________________________________________________________________ */
+@media (max-width:375px){
+
+    /* INDEX */
+    .imagenfondo_9 img {
+        height: 440px;
+    }
+    .logotipo h4{
+        font-size: 30px;
+        margin-top: 205px;
+    }
+    .logotipo h1 {
+        font-size: 80px;
+    }
+    .contenedorvideo video {
+        margin: 10px 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 57%;
+        /* box-shadow: 0px 0px 41px 60px rgba(0,0,0,1); */
+    }
+    .mask>.container_slider>.slide {
+        background-size: contain;
+        margin: -155px auto;
+    }
+    .mask>.container_slider>#slide1,
+    .mask>.container_slider>#slide2,
+    .mask>.container_slider>#slide3,
+    .mask>.container_slider>#slide4,
+    .mask>.container_slider>#slide5 {
+        background-attachment: inherit;
+    }
+    .comofabricamos {
+        background-color: white;
+        padding-bottom: 0px;
+        margin-top: -300px;
+        margin-bottom: -50px;
+    }
+    .comofabricamos img {
+        /* width: 200px;
+        height: 280px;
+        margin: 70px 0px; */
+
+        width: 166px;
+        height: 205px;
+        margin: 130px 0px;
+    }
+    h3 {
+        font-size: 11px;
+        line-height: 14px;
+        margin: 4px 0;
+    }
+    .comofabricamos p {
+        font-size: 9px;
+        line-height: 8px;
+        margin-bottom: 8px;
+    }
+    section div h1 {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    section div p {
+        font-size: 10px;
+        margin: 0px auto 20px;
+    }
+    #imghistoria {
+        height: 358px;
+        margin-top: 102px;
+    }
+    #historia p {
+        font-size: 10px;
+    }
+    main section #nuestrosproductos h1 {
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+    }
+    .modal h3 {
+        font-size: 21px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 10px;
+    }
+    .modal table {
+        margin-bottom: 50px;
+    }
+    .modal table tbody tr td span {
+        font-size: 16px;
+    }
+    .modal table tbody tr td {
+        padding: 3px;
+        box-shadow: 0px 2px 0px 0px black;
+        font-size: 11px;
+    }
+    .imagentitulo{
+        /* margin: 0px 30%; */
+        width: 28%;
+        height: 12%;
+        margin: 0px auto;
+    }
+    .bolsas{
+        width: 30%;
+        height: 47%;
+        margin-bottom: 10px;
+    }
+    #nuestrosproductos p a{
+        margin-top: 40px;
+        font-size: 10px;
+
+    }
+
+/* FOOTER */
+    .footerright img {
+        margin: 20px;
+    }
+    footer .footerright {
+        display: block;
+    }
+    .logolupa img{
+        display: none;
+    }
+
+
+    /* CURIOSIDADES */
+    .curiosidadesizq img,
+    .curiosidadesdcha img {
+        width: 120px;
+        height: 120px;
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+    .curiosidadesdcha img {
+        margin-left: -10px;
+        margin-right: 35px;
+    }
+    .container_curiosidades .curiosidadesizq p {
+        text-align: center;
+        margin-right: -118px;
+        margin-top: 20px;
+        margin-bottom: -80px;
+        opacity: 0.9;
+
+    }
+    .container_curiosidades .curiosidadesdcha p {
+        /* margin-right: 8px;
+        margin-left: -45px;
+        margin-top: 30px; */
+        text-align: center;
+        margin-right: -20px;
+        margin-left: -138px;
+        margin-top: 30px;
+        margin-bottom: -80px;
+        opacity: 0.9;
+    }
+
+    .container_curiosidades h2 {
+        text-align: center;
+    }
+    .container_curiosidades {
+        margin-bottom: 120px;
+    }
+
+    .container_curiosidades h2:hover{
+
+
+    }
+    .container_curiosidades p:hover{
+
+
+    }
+    .container_curiosidades img:hover{
+        width: 140px;
+        height: 140px;
+    }
+
+
+
+
+    /* SUSCRIPCION */
+    #formulariosuscrip form {
+        width: 315px;
+        margin: 40px auto;
+    }
+
+    /* LOGIN ADMIN */
+    #formulariologinreg form h3 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    #formulariologinreg {
+        width: 250px;
+        margin: 65px auto;
+    }
+    /* DONDE ESTAMOS */
+    main div h1{
+        font-size: 30px;
+    }
+    main div h3{
+        font-size: 15px;
+    }
+    main div p {
+        font-size: 14px;
+    }
+    #main_dondeestamos{
+        margin: -40px 30px auto;
+    }
+    main .dondeestamos{
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 33px;
+    }
+    .contenedor_googlemaps #googlemaps{
+        margin: 0 50%;
+    }
+}

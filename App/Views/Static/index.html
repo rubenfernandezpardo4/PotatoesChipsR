@@ -1,0 +1,812 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block headLinks %}
+
+<link rel="stylesheet" href="public/css/index.css">
+<link rel="stylesheet" href="public/css/logotipo.css">
+<link rel="stylesheet" href="public/css/slider.css">
+
+<!-- LINKS RESPONSIVE -->
+<link rel="stylesheet" media="only screen and (max-width: 768px)" href="public/css/responsive.css">
+<link rel="stylesheet" media="only screen and (max-width: 375px)" href="public/css/responsive.css">
+
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+<!-- ENLACE JQUERY -->
+<script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+<!-- JS de index -->
+<script type="text/javascript" src="public/js/index.js"></script>
+<!-- Enlace de crud(ADMIN) -->
+<script type="text/javascript" src="public/js/crud.js"></script>
+<!--ENLACE DE LA LIBRERIA  para la carga de imagenes-> /////////////bs-custom-file-input.js //////////////-->
+<script type="text/javascript" src="public/vendor/bs-custom-file-input.min.js"></script>
+<!-- JQUERY MODAL LINKS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+
+
+{% endblock %}
+
+
+{% block main %}
+<!-- AQUÍ AÑADIREMOS LO QUE QUERAMOS VER SOLO EN LA PAGINA INDEX.HTML -->
+<main>
+
+    <!-- Este div contiene la imagen de la portada(que cargamos desde css) -->
+
+    <!-- <div class="imagenfondo"></div> -->
+
+    <!-- <div class="imagenfondo_2">
+        <img src="public/img/images92.jpg" width="100%" height="" alt="">
+    </div> -->
+
+
+    <!-- LOGO E IMAGEN DE FONDO PRINCIPAL -->
+    <div class="imagenfondo_9">
+        <img src="public/img/images9.jpg" width="100%" height="500px" alt="">
+        <div class="logotipo">
+            <h4>Potatoes Chips</h4>
+            <h1>R</h1>
+        </div>
+    </div>
+    <!-- VIDEO_______________________________________________________________________ -->
+    <!-- video: MUTED(SILENCIADO), LOOP(AUTOCARGADO DESPUES DE FINALIZAR), AUTOPLAY(SE REPRODUCE AUTOMATIC.) -->
+    <div class="contenedorvideo">
+        <!-- IMAGEN DE FONDO DE VIDEO -->
+        <!-- <img src="public/img/imagenfondovideo.jpg" alt="" > -->
+        <!-- width="50%" height="50%" -->
+        <video  autoplay muted loop>
+            <source src="public/video/video1.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- SLIDER_______________________________________________________________________________ -->
+    <div class="mask">
+        <div class="container_slider">
+            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide2"></div>
+            <div class="slide" id="slide3"></div>
+            <div class="slide" id="slide4"></div>
+            <div class="slide" id="slide5"></div>
+        </div>
+    </div>
+    <!--COMO FABRICAMOS_________________________________________________ -->
+    <div class="comofabricamos">
+
+        <div class="comofabricamosizq">
+            <h3>Patatas seleccionadas</h3>
+            <p>La selección de las materias primas es nuestra máxima para poder ofrecer un producto natural con un aroma, sabor y textura únicos.</p>
+
+
+            <h3>Sal del mar menor</h3>
+            <p>Nuestras chips son condimentadas con sal del mar menor, una sal recolectada en el Parque Regional de San Pedro Del Pinatar que gracias a su clima y ubicación dan como resultado un sabor excepcional.</p>
+
+
+            <h3>Aceite de girasol</h3>
+            <p>No utilizamos aceites de palma ni derivados. Todas nuestras patatas están fritas con aceite de girasol u oliva 100% de origen natural.</p>
+        </div>
+
+        <img src="public/img/comofabricamos.jpg" alt="">
+
+        <div class="comofabricamosdcha">
+            <h3>Proceso de fabricación</h3>
+            <p>Mimamos cada parte del proceso de fabricación, desde su recolección hasta su packaging, sólo así se puede garantizar un producto de calidad.</p>
+
+
+
+            <h3>Sin alérgenos</h3>
+            <p>Ninguna de nuestras patatas fritas contiene gluten ni otros alergenos. Lo natural, es más sano.</p>
+
+
+
+            <h3>Atmósfera protectora</h3>
+            <p>Envasamos nuestros productos con nitrógeno para evitar la oxidación. Esto nos garantiza un producto estable y de sabor excepcional durante toda su vida útil.</p>
+        </div>
+
+    </div>
+
+    <!-- SABIAS QUE..._____________________________________________________________________- -->
+    <section>
+        <div id="historia">
+
+            <img src="public/img/images12.jpg" width='100%' height='700px' alt="" id="imghistoria">
+            <h1>Sabías que...</h1>
+            <p>En 1853, George Crum era el chef de Moon’s Lake House, en Saratoga Springs, EEUU. Crum no tenía fama de tener buen carácter, y la aparición de Cornelius Vanderbilt en el restaurante desencadenó uno de los inventos más famosos de la historia.</p>
+
+            <p></p>
+
+            <p>El señor Vanderbilt pidió un plato de patatas fritas, que en inglés se denominan french fries. Vanderbilt devolvió el plato argumentando que eran demasiado gruesas y estaban poco hechas. Crum cortó las patatas mucho más finas y las frió más tiempo, pero Vanderbilt era la horma de su zapato y las devolvió de nuevo porque aún eran demasiado gruesas. Harto de Vanderbilt, Crum decidió cortarlas tan finas y freírlas tanto que fuera imposible pincharlas con el tenedor sin romperlas, además de sazonarlas con excesiva sal.</p>
+
+            <p></p>
+
+            <p>Se las sirvieron a Vanderbilt esperando que, con razón, no quedara satisfecho, pero a Venderbilt le volvieron loco. Crum montó su propio restaurante, donde servía sus famosas “Saratoga Chips”.</p>
+        </div>
+
+        <!-- NUESTROS PRODUCTOS_________________________________________________________________ -->
+        <div id="nuestrosproductos">
+            <h1>NUESTRAS PATATAS</h1>
+
+            <!-- ______________________________________________________________________________________________________________ -->
+            <!-- PINTADO DE BOLSAS CON TWIG FOR -->
+            <div class="contenedor_productos">
+                    <!-- CON EL FOR RECORREMOS EL ARRAY -->
+                    {% for productos in dataProducts %}
+                    <div class="producto">
+                        {% if productos.categorias_idcategorias == "1" %}
+                            <img src="{{productos.image}}" alt="" class="bolsas">
+                            <img src="public/img/imagentitulocaseras.jpg" width="30%" height="10%"  alt="" class="imagentitulo">
+                            <p><a href="#caseras" rel="modal:open">{{productos.title}}</a></p>
+                        {% elseif productos.categorias_idcategorias == "2" %}
+                            <img src="{{productos.image}}" alt=""  class="bolsas">
+                            <img src="public/img/imagentitulopremium.jpg" width="" height=""  alt="" class="imagentitulo">
+                            <p><a href="#caseras" rel="modal:open">{{productos.title}}</a></p>
+                        {% elseif productos.categorias_idcategorias == "3" %}
+                            <img src="{{productos.image}}" alt=""  class="bolsas">
+                            <img src="public/img/imagentituloLigeras.jpg" width="" height=""  alt="" class="imagentitulo">
+                            <p><a href="#caseras" rel="modal:open">{{productos.title}}</a></p>
+                        {% elseif productos.categorias_idcategorias == "4" %}
+                            <img src="{{productos.image}}" alt=""  class="bolsas">
+                            <img src="public/img/imagentitulochips.jpg" width="" height=""  alt="" class="imagentitulo">
+                            <p><a href="#caseras" rel="modal:open">{{productos.title}}</a></p>
+                        {% elseif productos.categorias_idcategorias == "5" %}
+                            <img src="{{productos.image}}" alt=""  class="bolsas">
+                            <img src="public/img/imagentitulochurreria.jpg" width="" height=""  alt="" class="imagentitulo">
+                            <p><a href="#caseras" rel="modal:open">{{productos.title}}</a></p>
+                        {% elseif productos.categorias_idcategorias > "5" %}
+                            <img src="{{productos.image}}" alt=""  class="bolsas">
+                            <img src="public/img/nuevacateg.jpg" width="" height="" alt="" class="imagentitulo">
+                            <p><a href="#caseras" rel="modal:open">{{productos.title}}</a></p>
+                        {% else %}
+                            <p>Categoria, incorrectamente introducida</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+            </div>
+        </div>
+
+        <!-- MODAL -->
+
+        <p><a href="#caseras" rel="modal:open"></a></p>
+        <div id="caseras" class="modal">
+                <!-- <img src="public/img/caseras1.jpg" alt="" class="imgmodal"> -->
+                <h3>VALORES NUTRICIONALES</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="119"><span>Información nutricional</span></td>
+                            <td width="92"><span>100g</span></td>
+                        </tr>
+                        <tr>
+                            <td width="119">Valor energético</td>
+                            <td width="92">2251 kJ/ 540 kcal</td>
+                        </tr>
+                        <tr>
+                            <td width="119">Grasas</td>
+                            <td width="92">34 g</td>
+                        </tr>
+                        <tr>
+                            <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                            <td width="92">4,2 g</td>
+                        </tr>
+                        <tr>
+                            <td width="119">Hidratos de carbono</td>
+                            <td width="92">50 g</td>
+                        </tr>
+                        <tr>
+                            <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                            <td width="92">0,6 g</td>
+                        </tr>
+                        <tr>
+                            <td width="119">Fibra alimentaria</td>
+                            <td width="92">4,9 g</td>
+                        </tr>
+                        <tr>
+                            <td width="119">Proteínas</td>
+                            <td width="92">6,4 g</td>
+                        </tr>
+                        <tr>
+                            <td width="119">Sal</td>
+                            <td width="92">0,71 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+            <!-- ______________________________________________________________________________________________________________ -->
+
+        <!-- EN HTML (SIN TRAERME LOS PRODUCTOS DE LA BASE DE DATOS) -->
+        <!-- <div id="nuestrosproductos">
+            <h1>NUESTRAS PATATAS</h1>
+
+            <img src="public/img/imagentitulocaseras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+
+                     <img src="public/img/caseras1.jpg" alt="">
+
+                </div>
+                <div class="producto">
+                    <img src="public/img/caseras2.jpg" alt="">
+
+                    <p><a href="#caseraspaja" rel="modal:open">CASERAS PAJA</a></p>
+                    <div id="caseraspaja" class="modal">
+                            <img src="public/img/caseras2.jpg" alt="" class="imgmodal">
+                            <h3>CASERAS PAJA</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+
+
+                </div>
+                <div class="producto">
+                    <img src="public/img/caseras3.jpg" alt="">
+
+                    <p><a href="#caserasonduladas" rel="modal:open">CASERAS ONDULADAS</a></p>
+                    <div id="caserasonduladas" class="modal">
+                            <img src="public/img/caseras3.jpg" alt="" class="imgmodal">
+                            <h3>CASERAS ONDULADAS</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <img src="public/img/imagentitulopremium.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/premium1.jpg" alt="">
+
+                    <p><a href="#premium" rel="modal:open">PREMIUM</a></p>
+                    <div id="premium" class="modal">
+                            <img src="public/img/premium1.jpg" alt="" class="imgmodal">
+                            <h3>PREMIUM</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/premium2.jpg" alt="">
+
+                    <p><a href="#premiumsaboraperitivo" rel="modal:open">PREMIUM SABOR APERITIVO</a></p>
+                    <div id="premiumsaboraperitivo" class="modal">
+                            <img src="public/img/premium2.jpg" alt="" class="imgmodal">
+                            <h3>PREMIUM SABOR APERITIVO</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/premium3.jpg" alt="">
+
+                    <p><a href="#premiumquesocabraycebolla" rel="modal:open">PREMIUM QUESO DE CABRA Y CEBOLLA CARAMELIZADA</a></p>
+                    <div id="premiumquesocabraycebolla" class="modal">
+                            <img src="public/img/premium3.jpg" alt="" class="imgmodal">
+                            <h3>PREMIUM QUESO DE CABRA Y CEBOLLA CARAMELIZADA</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <img src="public/img/imagentituloligeras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/ligeras1.jpg" alt="">
+
+                    <p><a href="#ligeras" rel="modal:open">LIGERAS</a></p>
+                    <div id="ligeras" class="modal">
+                            <img src="public/img/ligeras1.jpg" alt="" class="imgmodal">
+                            <h3>LIGERAS</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/ligeras2.jpg" alt="">
+
+                    <p><a href="#ligerastomateyoregano" rel="modal:open">LIGERAS TOMATE Y OREGANO</a></p>
+                    <div id="ligerastomateyoregano" class="modal">
+                            <img src="public/img/ligeras2.jpg" alt="" class="imgmodal">
+                            <h3>LIGERAS TOMATE Y OREGANO</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <img src="public/img/imagentitulochips.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/chips1.jpg" alt="">
+
+                    <p><a href="#chipsoriginales" rel="modal:open">CHIPS ORIGINALES</a></p>
+                    <div id="chipsoriginales" class="modal">
+                            <img src="public/img/chips1.jpg" alt="" class="imgmodal">
+                            <h3>CHIPS ORIGINALES</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/chips2.jpg" alt="">
+
+                    <p><a href="#chipspizza" rel="modal:open">CHIPS PIZZA</a></p>
+                    <div id="chipspizza" class="modal">
+                            <img src="public/img/chips2.jpg" alt="" class="imgmodal">
+                            <h3>CHIPS PIZZA</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/chips3.jpg" alt="">
+
+                    <p><a href="#chipsbaconycheese" rel="modal:open">CHIPS BACON & CHEESE</a></p>
+                    <div id="chipsbaconycheese" class="modal">
+                            <img src="public/img/chips3.jpg" alt="" class="imgmodal">
+                            <h3>CHIPS BACON & CHEESE</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <img src="public/img/imagentitulochurreria.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/churreria1.jpg" alt="">
+
+                    <p><a href="#churreria" rel="modal:open">CHURRERIA</a></p>
+                    <div id="churreria" class="modal">
+                            <img src="public/img/churreria1.jpg" alt="" class="imgmodal">
+                            <h3>CHURRERIA</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="119"><span>Información nutricional</span></td>
+                                        <td width="92"><span>100g</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Valor energético</td>
+                                        <td width="92">2251 kJ/ 540 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Grasas</td>
+                                        <td width="92">34 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de las cuales saturadas</td>
+                                        <td width="92">4,2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Hidratos de carbono</td>
+                                        <td width="92">50 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">&nbsp;&nbsp; de los cuales azúcares</td>
+                                        <td width="92">0,6 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Fibra alimentaria</td>
+                                        <td width="92">4,9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Proteínas</td>
+                                        <td width="92">6,4 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="119">Sal</td>
+                                        <td width="92">0,71 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> -->
+    </section>
+</main>
+
+{% endblock %}

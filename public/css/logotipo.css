@@ -1,0 +1,27 @@
+
+/* LOGOTIPO 'Potatoes Chips R' */
+.logotipo h1{
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    right: 40%;
+    color: white;
+    /* margin: 0px 50%; */
+    margin-top: 20%;
+    margin-left: 30%;
+    font-family: 'Parisienne';
+}
+
+.logotipo h4{
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    color: white;
+    /* margin: 0px 50%; */
+    margin-top: 20%;
+    margin-left: 20%;
+    font-family: 'Parisienne';
+    margin-right: 5px;
+
+}

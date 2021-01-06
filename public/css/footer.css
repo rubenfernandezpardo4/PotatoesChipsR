@@ -1,0 +1,90 @@
+/*
+ESTILOS DEL FOOTER PARA QUE SIEMPRE SE QUEDE ABAJO DE LA PAGINA(NO LOS USARÉ EN LA WEB)____________________________________________________________________________________________- */
+
+html,
+body{
+    /* LARGO 100% */
+    height: 100%;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    /* 1= ARRIBA, 0=ABAJO Y AUTO SE APLICARA EN IZQ Y DERECHA */
+    flex: 1 0 auto;
+}
+
+/* ESTILOS DEL FOOTER_____________________________________________________________________ */
+footer{
+    background-color: #cfbf13;
+    font-family: sans-serif;
+    width: 100%;
+    /* height: 5%; */
+    bottom: 0;
+    padding: 15px;
+}
+
+footer span{
+    color: white;
+    font-size: 15px;
+    margin: 8px;
+    /* font-weight: bold; */
+
+}
+
+footer span:hover{
+    color: black;
+    font-size: 15px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .footerleft{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #cfbf13;
+}
+
+footer .footerright{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #cfbf13;
+}
+
+.logolupa img,
+footer .footerright .logoredes img{
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+}
+
+footer .footerright .logoredes img:hover{
+    padding: 2px;
+    top: 10px;
+}
+
+
+input[type=search]{
+    padding: 12px;
+    outline: 0;
+    border: 0px;
+    margin: 12px;
+    height: 20px;
+}
+
+input[type=search]:focus{
+    box-shadow: 0 0 10px #000000;
+
+}
+
+.footerright img{
+    cursor: pointer;
+    margin: 12px;
+}
+
+/* _____________________________________________________________________________________________ */

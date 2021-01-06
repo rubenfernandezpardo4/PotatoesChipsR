@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="public/css/menuRestoPaginas.css">
+        <link rel="stylesheet" href="public/css/footer.css">
+        <link rel="stylesheet" href="public/css/responsive.css">
+
+        <!-- link jquery -->
+        <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+        <!-- link de js -->
+        <script type="text/javascript" src="public/js/index.js"></script>
+        <script type="text/javascript" src="public/js/responsive.js"></script>
+
+        <!-- links tipos de fuente -->
+        <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+        <!-- (LINK PARA SPINNER) -->
+        <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+        {% block headLinks %}{% endblock %}
+
+    </head>
+
+    <!-- AQUÍ PONEMOS toDO EL CONTENIDO QUE SE REPITE EN CADA APARTADO, EN ESTE CASO, EL HEADER(MENU) , Y EL FOOTER -->
+    <body>
+        <header>
+            <div class="menu_hamburguesa">
+                <a href="#" class=""><span class="menu_menu"></span>Menu</a>
+                <a href="#" class="btn_hamburguesa"><img src="public/img/menu_22.png" width="40px" heigth="40px" alt=""></a>
+            </div>
+
+            <nav class="menu" >
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="curiosidades">Curiosidades</a></li>
+                    <li><a href="suscripcion">Suscripción</a></li>
+                    <!-- SI NO HAY SESION _______________________________________________________________-->
+                    {% if session.SESSEMAIL is not defined %}
+
+                    <!-- LOGIN/REGISTRO ESTA ESCONDIDO, UNICAMENTE VISIBLE PARA EL ADMIN (mirar routes.json) -->
+                    <!-- <li><a href="login_reg">Login/Registro</a></li> -->
+
+                    {% endif %}
+                    <!-- _______________________________________________________________________________________ -->
+                    <li><a href="dondeestamos">¿Donde estamos?</a></li>
+                    <!-- Todo lo que pongamos aquí dentro se va a pintar con TWIG si existe sesion (mirar view.php) -->
+                    <!-- SI HAY SESION _______________________________________________________________-->
+                    {% if session.SESSEMAIL is defined %}
+                    <!-- CRUD -->
+                    <li><a href="crud">ADMIN</a></li>
+                    <li><a href="close">Cerrar sesión</a></li>
+                    <!-- Recogemos la imagen con twig con el array(dataUser), y solo el campo '.image', pero podríamos elegir cualquier dato más -->
+                    <!-- <img src="{{ dataUser.image }}" alt="" id="avatar"> -->
+                    {% endif %}
+                    <!-- ____________________________________________________________________________________ -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- EN EL MAIN SE CARGA EL CONTENIDO DE CADA PAGINA, PERO ESO NO LO HAREMOS EN "BASE.HTML" -->
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+
+        <footer id="footer">
+            <div class="footerleft">
+                <span> Únete a nuestro equipo </span>
+                <span> Política de cookies </span>
+                <span> Aviso legal </span>
+                <span> Código Ético </span>
+                <span> Otra información </span>
+            </div>
+
+            <div class="footerright">
+                <div class="logolupa">
+                    <img src="public/img/logolupa.png" alt="" width="40px" height="40px">
+                </div>
+                <input type="search" placeholder="Buscar..." >
+
+                <div class="logoredes">
+                    <!-- LOGOS SIN HREF -->
+                    <!-- <img src="public/img/logo1.png" alt="" width="40px" height="40px">
+                    <img src="public/img/logo2.png" alt="" width="40px" height="40px">
+                    <img src="public/img/logo3.png" alt="" width="40px" height="40px">
+                    <img src="public/img/logo4.png" alt="" width="40px" height="40px"> -->
+
+                    <a href="https://es.linkedin.com/" target="_blank"><img src="public/img/logo1.png" alt="" width="40px" height="40px"></a>
+                    <a href="https://twitter.com/explore" target="_blank"><img src="public/img/logo2.png" alt="" width="40px" height="40px"></a>
+                    <a href="https://es-es.facebook.com/" target="_blank"><img src="public/img/logo3.png" alt="" width="40px" height="40px"></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="public/img/logo4.png" alt="" width="40px" height="40px"></a>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+    </body>
+
+</html>
